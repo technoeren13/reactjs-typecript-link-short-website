@@ -1,23 +1,16 @@
 {
-  "name": "link-short-website",
+  "name": "reactjs-typescript-link-shorter",
   "version": "1.0.0",
   "scripts": {
-    "dev:backend": "npm run dev --prefix packages/backend",
-    "build:backend": "npm run build --prefix packages/backend",
-    "dev:frontend": "npm run dev --prefix packages/frontend",
-    "build:frontend": "npm run build --prefix packages/frontend"
-
+    "backend": "yarn workspace @linkshorter/backend",
+    "frontend": "yarn workspace @linkshorter/frontend"
   },
   "workspaces": [
     "packages/**"
   ],
+  "private": true,
   "devDependencies": {
-    "@types/node": "^17.0.16",
-    "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
-    "ts-node": "^10.5.0"
-  },
-  "dependencies": {
-    "typescript": "^4.5.5"
+    "eslint-config-prettier": "^8.3.0"
   }
 }
